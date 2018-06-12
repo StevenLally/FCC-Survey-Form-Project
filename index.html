@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 id="title">Coding Survey</h1>
+<p id="description">Please let us know why you want to learn coding!</p>
+<form id="survey-form">
+  <div>
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" name="name" placeholder="Enter Your Name" required><br>
+  </div>
+  
+  <div>  
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" name="email" placeholder="Enter Your Email" required><br>
+  </div>
+  
+  <div>  
+    <label id="number-label" for="age">Age:</label>
+    <input id="number" type="number" name="age" min="0" max="100" placeholder="Age" required><br>
+  </div>
+  
+  <div>
+    <label id="education-label" for="education">Highest Level of Education:</label>
+    <select id="dropdown" name="education">
+      <option value="highschool">High School Diploma</option>
+      <option value="somecollege">Some College</option>
+      <option value="two-year">2-Year Degree</option>
+      <option value="bachelors">Bachelor's Degree</option>
+      <option value="masters">Master's Degree</option>
+      <option value="prefer-not">Prefer Not to Say</option>
+    </select><br>
+  </div>
+  
+  <div>
+    <label id="radio-label" for="employment">Employment Status:</label><br>
+    <input type="radio" name="employment" value="full-time" checked>Full Time<br>
+    <input type="radio" name="employment" value="part-time">Part Time<br>
+    <input type="radio" name="employment" value="student">Student<br>
+    <input type="radio" name="employment" value="unemployed">Unemployed<br>
+  </div>
+   
+  <div>
+    <label id="checkbox-label" for="learn-code">What Sources Are Your Using To Learn Coding?</label><br>
+    <input type="checkbox" name="learn-code" value="fcc">FreeCodeCamp<br>
+    <input type="checkbox" name="learn-code" value="codecademy">Codecademy<br>
+    <input type="checkbox" name="learn-code" value="treehouse">Treehouse<br>
+    <input type="checkbox" name="learn-code" value="udemy">Udemy Courses<br>
+    <input type="checkbox" name="learn-code" value="college">College Student/Classes<br>
+    <input type="checkbox" name="learn-code" value="bootcamp">Coding Bootcamp<br>
+    <input type="checkbox" name="learn-code" value="books">Books<br>
+    <input type="checkbox" name="learn-code" value="other">Other<br>
+  </div>
+  
+  <div>
+    <label id="reason-label" for="reason">Why Are You Learning to Code?</label>
+    <select id="reason-dropdown" name="reason">
+      <option value="career-change">Career Change</option>
+      <option value="current-career">Advance Current Career</option>
+      <option value="fun">Just For Fun</option>
+      <option value="other">Other</option>
+    </select><br>
+  </div>
+  
+  <div>
+    <label id="textarea-label" for="comments">Any Additional Comments?<br>
+    <textarea name="comments" rows="5" cols="30" placeholder="Enter additional comments here...">
+    </textarea><br>
+  </div>
+  <div>
+    <input id="submit" type="submit" value="submit">
+  </div>
+</form>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+  
+
+</body>
+
+</html>
